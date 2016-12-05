@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="`css/style.css">
+  <title>Pink</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
+      <a class="logo-link logo-link--top">
+        <picture>
+          <source>
+          <source>
+          <img src="" alt="логотип Pink" class="logo-link__image">
+        </picture>
+      </a>
+      <button class="main-nav__toggle-button">Открыть/закрыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="promo-block">
+      <picture>
+        <source>
+        <source>
+        <img src="" alt="Пример работы приложения - телефон с розовым экраном" class="promo-block__image">
+      </picture>
+      <div class="promo-block__slogan">Взгляните на жизнь иначе!</div>
+      <a href="" class="promo-block__main-link">Скачать приложение</a>
+      <ul class="promo-block__links-list">
+        <li class="promo-block__links-item">
+          <a href="#" class="promo-block__link promo-block__link--apple">Скачать для iPhone и iPad</a>
+        </li>
+        <li class="promo-block__links-item">
+          <a href="#" class="promo-block__link promo-block__link--android">Скачать для Android</a>
+        </li>
+        <li class="promo-block__links-item">
+          <a href="#" class="promo-block__link promo-block__link--windows">Скачать для Windows</a>
+        </li>
+      </ul>
+      <p class="promo-block__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </header>
+  <section class="features">
+    <div class="features__promo-slogan features__promo-slogan--question">Устали от серости мегаполиса?</div>
+    <div class="features__promo-slogan">Нам есть, что вам предложить!</div>
+    <ul class="features__list">
+      <li class="features__list-item">
+        <h2 class="features__feature-title">Поднимает настроение</h2>
+        <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <img src="" alt="Серое унылое фото" class="features__image">
+      </li>
+      <li class="features__list-item">
+        <h2 class="features__feature-title">Меняет мир вокруг</h2>
+        <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <img src="" alt="Фото, измененное приложением Pink" class="features__image">
+      </li>
+      <li class="features__list-item">
+        <h2 class="features__feature-title">Заводит новых друзей</h2>
+        <p class="features__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <img src="" alt="Фото, именненное приложением Pink со смайликом" class="features__image">
+      </li>
+    </ul>
+  </section>
+  <section class="effect-duration">
+    <img src="" alt="Эффект - 24 часа" class="effect-duration__image">
+    <h2 class="effect-duration__title">Эффект на 24 часа!</h2>
+    <p class="effect-duration__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+    <a href="" class="effect-duration__link">Узнать больше об исследовании</a>
+  </section>
+  <section class="slider slider--testimonials">
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="testimonial-slide1" checked>
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="testimonial-slide2">
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="testimonial-slide3">
+    <div class="slider__container">
+      <a href="" class="slider__previous">Предыдущий слайд</a>
+      <a href="" class="slider__next">Следующий слайд</a>
+      <div class="slider__inner">
+        <div class="slide">
+          <p class="slide__testimonial-author">Николай Петров <span class="slide__testimonial-author-details">25 лет, водитель трамвая</span></p>
+          <p class="slide__testimonial-content"><span class="slide__quotation-marks">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="slide__quotation-marks">»</span></p>
+        </div>
+      </div>
+      <div class="slider__controls">
+        <label for="testimonial-slide1" class="slider__radio-label">Слайд 1</label>
+        <label for="testimonial-slide2" class="slider__radio-label">Слайд 2</label>
+        <label for="testimonial-slide3" class="slider__radio-label">Слайд 3</label>
+      </div>
+    </div>
+  </section>
+  <section class="slider slider--tariffs">
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="tariffs-slide1" checked>
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="tariffs-slide2">
+    <input type="radio" class="slider__radio-button" name="testimoniasl" id="tariffs-slide3">
+    <div class="slider__container">
+      <a href="" class="slider__previous">Предыдущий слайд</a>
+      <a href="" class="slider__next">Следующий слайд</a>
+      <div class="slider__inner">
+        <table class="tariffs-table">
+          <tr>
+            <th class="tariffs-table__clear-cell"></th>
+            <th class="tariffs-table__tariff-name">База <span class="tariffs-table__tariff-price">1,99 USD</span></th>
+            <th class="tariffs-table__tariff-name tariffs-table__tariff-name--hit">Стандарт<span class="tariffs-table__tariff-price">3,99 USD</span></th>
+            <th class="tariffs-table__tariff-name">Анлим<span class="tariffs-table__tariff-price">9,99 USD</span></th>
+          </tr>
+          <tr>
+            <th class="tariffs-table__feature">Розовый фильтр</th>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Розовый фильтр</span>Да</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Розовый фильтр</span>Да</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Розовый фильтр</span>Да</td>
+          </tr>
+          <tr>
+            <th class="tariffs-table__feature">Смайлики</th>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--not-included"><span class="tariffs-table__feature-text">Смайлики</span>Нет</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Смайлики</span>Да</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Смайлики</span>Да</td>
+          </tr>
+          <tr>
+            <th class="tariffs-table__feature">Коментарии</th>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--not-included"><span class="tariffs-table__feature-text">Коментарии</span>Нет</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--not-included"><span class="tariffs-table__feature-text">Коментарии</span>Нет</td>
+            <td class="tariffs-table__data-cell tariffs-table__data-cell--included"><span class="tariffs-table__feature-text">Коментарии</span>Да</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slider__controls">
+        <label for="tariffs-slide1" class="slider__radio-label">Слайд 1</label>
+        <label for="tariffs-slide2" class="slider__radio-label">Слайд 2</label>
+        <label for="tariffs-slide3" class="slider__radio-label">Слайд 3</label>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+    <div class="contacts__item">
+      <h3 class="contacts__sub-title">Звоните:</h3>
+      <p class="contects__content"><a href="" class="contacts__link">+7 (812) 555-66-66</a></p>
+    </div>
+    <div class="contacts__item">
+      <h3 class="contacts__sub-title">Пишите:</h3>
+      <p class="contects__content"><a href="" class="contacts__link">mail@htmlacademy.ru</a></p>
+    </div>
+    <div class="contacts__item">
+      <h3 class="contacts__sub-title">Приезжайте в гости:</h3>
+      <p class="contects__content"><a href="" class="contacts__link">ул. Большая Конюшенная, 19/8</a></p>
+    </div>
+    <div class="contacts__map">
+      <img src="" alt="Белый треугольник" class="contacts__map-before">
+      <div class="contacts__map-container" id="map"></div>
+    </div>
+  </section>
+  <footer class="page-footer page-footer--index">
+    <a class="logo-link logo-link--bottom">
+      <picture>
+        <source>
+        <source>
+        <img src="" alt="логотип Pink" class="logo-link__image">
+      </picture>
+    </a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="" class="social-link social-link--tw">Мы в Twitter</a></li>
+      <li class="social-list__item"><a href="" class="social-link social-link--fb">Мы на Facebook</a></li>
+      <li class="social-list__item"><a href="" class="social-link social-link--youtube">Мы на YouTube</a></li>
+    </ul>
+    <div class="copyright"> Разработано
+      <a href="" class="copiright__link">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
