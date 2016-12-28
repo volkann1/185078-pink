@@ -10,6 +10,16 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var rename = require("gulp-rename");
 
+gulp.task("symbols", function() {
+  return gulp.src("img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("symbols.svg"))
+    .pipe(gulp.dest("img"));
+});
+
 gulp.task("style", function() {
   gulp.src("less/style.less")
     .pipe(plumber())
@@ -32,16 +42,6 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
-  });
-
-  gulp.task("symbols", function() {
-    return gulp.src("img/icons/*.svg")
-      .pipe(svgmin())
-      .pipe(svgstore({
-        inlineSvg: true
-      }))
-      .pipe(rename("symbols.svg"))
-      .pipe(gulp.dest("img"));
   });
 
   gulp.watch("less/**/*.less", ["style"]);
